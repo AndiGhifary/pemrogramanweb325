@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+        }
+        button:nth-child(2) {
+            background-color: #6c757d;
+        }
+        #hasil {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Penjumlahan</h2>
+        <input type="number" id="bilangan1" placeholder="Bilangan pertama">
+        <input type="number" id="bilangan2" placeholder="Bilangan kedua">
+        <div>
+            <button onclick="hitung()">Jumlahkan</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+        <h3>Hasil: <span id="hasil">0</span></h3>
+    </div>
+
+    <script>
+        function hitung() {
+            var bil1 = parseFloat(document.getElementById('bilangan1').value);
+            var bil2 = parseFloat(document.getElementById('bilangan2').value);
+            var hasil = bil1 + bil2;
+            document.getElementById('hasil').innerText = hasil || 0;
+        }
+
+        function reset() {
+            document.getElementById('bilangan1').value = '';
+            document.getElementById('bilangan2').value = '';
+            document.getElementById('hasil').innerText = 0;
+        }
+    </script>
+</body>
+</html>
