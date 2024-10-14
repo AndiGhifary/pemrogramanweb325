@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CekPajakID</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #001A53;
+            color: white;
+        }
+
+        .header {
+            background-color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 28px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-top: 20px;
+        }
+
+        form {
+            display: inline-block;
+            background-color: #002E86;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 250px;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        .button {
+            background-color: #00FFFF;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #00cccc;
+        }
+
+        .province-list {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+            width: 80%;
+        }
+
+        .province-list div {
+            display: inline-block;
+            vertical-align: top;
+            width: 20%;
+            padding: 10px;
+        }
+
+        .province-list div ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .province-list div ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        CekPajakID
+    </div>
+
+    <div class="container">
+        <h1>Masukkan data kendaraan anda!</h1>
+        <form action="#">
+            <input type="text" placeholder="Kode Plat daerah" required><br>
+            <input type="text" placeholder="Nomor Plat" required><br>
+            <input type="text" placeholder="Warna Plat" required><br>
+            <input type="text" placeholder="Provinsi" required><br>
+            <button type="submit" class="button">Periksa sekarang!</button>
+        </form>
+
+        <div class="province-list">
+            <div>
+                <ul>
+                    <li>Aceh</li>
+                    <li>Sumatra Utara</li>
+                    <li>Sumatra Barat</li>
+                    <li>Jambi</li>
+                    <li>Sumatra Selatan</li>
+                    <li>Bengkulu</li>
+                    <li>Kep Bangka Belitung</li>
+                    <li>Lampung</li>
+                    <li>Kep Riau</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Dki Jakarta</li>
+                    <li>Jawa Barat</li>
+                    <li>Jawa Tengah</li>
+                    <li>DI Yogyakarta</li>
+                    <li>Jawa Timur</li>
+                    <li>Banten</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Bali</li>
+                    <li>Nusa Tenggara Barat</li>
+                    <li>Nusa Tenggara Timur</li>
+                    <li>Kalimantan Barat</li>
+                    <li>Kalimantan Tengah</li>
+                    <li>Kalimantan Selatan</li>
+                    <li>Kalimantan Timur</li>
+                    <li>Kalimantan Utara</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Sulawesi Utara</li>
+                    <li>Sulawesi Tengah</li>
+                    <li>Sulawesi Selatan</li>
+                    <li>Sulawesi Tenggara</li>
+                    <li>Gorontalo</li>
+                    <li>Sulawesi Barat</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Maluku</li>
+                    <li>Maluku Utara</li>
+                    <li>Papua</li>
+                    <li>Papua Barat</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
