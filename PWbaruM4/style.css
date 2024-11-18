@@ -2,35 +2,35 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('home.jpg'); /* Ganti dengan nama gambar */
-    background-size: cover; /* Gambar memenuhi seluruh layar */
-    background-repeat: no-repeat; /* Tidak mengulang gambar */
-    background-position: center; /* Memusatkan gambar */
-    background-attachment: fixed; /* Gambar tetap saat scroll */
-    color: white; /* Teks putih untuk kontras */
+    background-image: url('home.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: white; 
 }
 header {
-    background: rgba(0, 0, 0, 0.7); /* Transparansi untuk teks header */
+    background: rgba(0, 0, 0, 0.7); 
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 header h1 {
     margin: 0;
-    font-size: 2.8rem; /* Ukuran lebih besar untuk tampilan menarik */
-    text-transform: uppercase; /* Huruf kapital untuk tampilan profesional */
-    letter-spacing: 2px; /* Jarak antar huruf */
+    font-size: 2.8rem; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
 }
 header p {
     margin: 10px 0 0;
     font-size: 1.2rem;
-    font-style: italic; /* Menambahkan gaya miring */
+    font-style: italic; 
 }
 nav {
-    background: rgba(0, 0, 0, 0.7); /* Transparansi untuk navigasi */
+    background: rgba(0, 0, 0, 0.7); 
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    position: sticky; /* Navigasi tetap di atas saat scroll */
+    position: sticky; 
     top: 0;
     z-index: 1000;
 }
@@ -40,25 +40,25 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 14px 20px;
-    font-weight: bold; /* Teks lebih tegas */
-    text-transform: uppercase; /* Huruf kapital */
-    letter-spacing: 1px; /* Jarak antar huruf */
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
 }
 
 .container {
     padding: 20px;
     max-width: 1100px;
     margin: auto;
-    background: rgba(255, 255, 255, 0.9); /* Transparan untuk teks di atas background */
+    background: rgba(255, 255, 255, 0.9); 
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: black; /* Teks di dalam container tetap hitam */
+    color: black; 
 }
 .services {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px; /* Tambahkan jarak antar elemen */
+    gap: 20px; 
 }
 .service {
     flex: 1 1 calc(33.33% - 20px);
@@ -67,7 +67,7 @@ nav a {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Bayangan sederhana */
+    box-shadow: 0 0 5px rgba(0,0,0,0.1); 
 }
 .service img {
     max-width: 100%;
@@ -75,7 +75,7 @@ nav a {
 }
 .service h3 {
     margin: 15px 0 10px;
-    color: #d9700f; /* Warna judul sesuai tema */
+    color: #d9700f; 
 }
 footer {
     background: rgba(0, 0, 0, 0.7);
@@ -83,10 +83,10 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
-    font-size: 0.9rem; /* Ukuran lebih kecil untuk footer */
-    letter-spacing: 1px; /* Jarak antar huruf */
-    text-transform: uppercase; /* Huruf kapital */
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3); /* Bayangan atas untuk footer */
+    font-size: 0.9rem; 
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3); 
 }
 footer p {
     margin: 0;
@@ -102,21 +102,21 @@ button {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: background 0.3s ease, transform 0.2s ease; /* Efek hover */
+    transition: background 0.3s ease, transform 0.2s ease; 
 }
 button:hover {
     background: #f4a261;
-    transform: scale(1.05); /* Sedikit memperbesar saat hover */
+    transform: scale(1.05); 
 }
 
-/* Tentang & Hubungi Kami */
+
 #about-contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    background: rgba(249, 249, 249, 0.9); /* Latar belakang transparan */
+    background: rgba(249, 249, 249, 0.9); 
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
@@ -124,7 +124,7 @@ button:hover {
 }
 .about-section,
 .contact-section {
-    flex: 1 1 calc(50% - 10px); /* Membagi ruang menjadi dua bagian */
+    flex: 1 1 calc(50% - 10px); 
     padding: 10px;
 }
 .about-section h3,
@@ -177,7 +177,7 @@ button:hover {
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
-    width: 100%; /* Tombol melebar */
+    width: 100%; 
 }
 #form button:hover {
     background: #f4a261;
